@@ -78,5 +78,6 @@ $('section#perfect-sunday').waypoint(function(direction){
     },{
         offset:'450px;'
     })
+*/
 
-    */
+    

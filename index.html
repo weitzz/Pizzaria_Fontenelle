@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizzaria Fontenelle</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"   rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"   rel="stylesheet"-->
     <link rel="stylesheet" href="./style/animations.css">
     <link rel="stylesheet" href="./style/layout.css">
     <link rel="stylesheet" href="./style/typography.css">
     
 </head>
 
-<div id="test"></div>
 <body>
      <!--NAVEGACAO DO SITE-->
     <header>
@@ -42,9 +42,9 @@
  <!--PERFECT SUNDAY-->
     <section id="perfect-sunday">
         <div id="perfect-left">
-            <div class="sheet1"></div>
-            <div class="shrimp"></div>
-            <div class="sheet2"></div>
+            <div class="sheet1" data-aos="fade-up" data-aos-offset="450"data-aos-easing="ease-in-out"data-aos-duration="700"data-aos-easing="ease-in-out"></div>
+            <div class="shrimp" data-aos="fade-up"data-aos-offset="450"data-aos-easing="ease-in-out"data-aos-duration="800"data-aos-easing="ease-in-out"></div>
+            <div class="sheet2"data-aos="fade-up"data-aos-offset="250"data-aos-easing="ease-in-out"data-aos-duration="1000"data-aos-easing="ease-in-out"></div>
         </div>
         <div id="perfect-center">
             <h2>Seu Domingo Perfeito</h2>
@@ -73,9 +73,9 @@
                 </div>
         </div>
         <div id="perfect-right">
-            <div class="sheet3"></div>
-            <div class="tomato"></div>
-            <div class="cheese"></div>
+            <div class="sheet3"data-aos="fade-up"data-aos-offset="450"data-aos-duration="700" data-aos-easing="ease-in-out"></div>
+            <div class="tomato"data-aos="fade-up"data-aos-offset="450"data-aos-easing="ease-in-out"data-aos-duration="800"data-aos-easing="ease-in-out"></div>
+            <div class="cheese"data-aos="fade-up"data-aos-offset="250"data-aos-duration="1000"data-aos-easing="ease-in-out"></div>
         </div>
     </section>
 <!--PIZZA------------------->
@@ -85,7 +85,7 @@
         </p>
 
         <div id="pizza-options-master">
-            <div class="pizza-options">
+            <div class="pizza-options"data-aos="fade-up"data-aos-offset="300"data-aos-duration="900" data-aos-easing="ease-in-out">
                 <h4>Sabores Tradicionais</h4>
                 <ul>
                     <li>Pepperoni</li>
@@ -95,7 +95,7 @@
                     <li>Napolitana</li>                        
                 </ul>
             </div>
-            <div class="pizza-options">                     
+            <div class="pizza-options"data-aos="fade-up"data-aos-offset="300"data-aos-duration="900" data-aos-easing="ease-in-out">                     
                 <h4>Sabores Especiais</h4>
                 <ul>
                     <li>Camarão</li>
@@ -105,7 +105,7 @@
                     <li>Mussarela de Bufallo</li>
                 </ul>
             </div>
-            <div class="pizza-options">
+            <div class="pizza-options"data-aos="fade-up"data-aos-offset="300"data-aos-duration="900" data-aos-easing="ease-in-out">
                 <h4>Massas</h4>
                 <ul>
                     <li>Tradicional</li>
@@ -115,7 +115,7 @@
                     <li>Sem Gluten</li>
                 </ul>
             </div>
-            <div class="pizza-options">
+            <div class="pizza-options"data-aos="fade-up"data-aos-offset="400"data-aos-duration="1000" data-aos-easing="ease-in-out">
                 <h4>Bordas</h4>
                 <ul>
                     <li>Sem recheio</li>
@@ -124,7 +124,7 @@
                     <li>Especial da Casa</li>
                 </ul>                  
             </div>
-            <div class="pizza-options">
+            <div class="pizza-options"data-aos="fade-up"data-aos-offset="400"data-aos-duration="1000" data-aos-easing="ease-in-out">
                 <h4>Sobremesa</h4>
                 <ul>
                     <li>Cartola</li>
@@ -134,7 +134,7 @@
                     <li>Torta Alemã</li>
                 </ul> 
             </div>
-            <div class="pizza-options">
+            <div class="pizza-options"data-aos="fade-up"data-aos-offset="400"data-aos-duration="1000" data-aos-easing="ease-in-out">
                 <h4>Bebidas</h4>
                 <ul>
                     <li>Refrigerante 2L</li>
@@ -299,10 +299,15 @@
 </footer>
     
 
-   <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous"></script> 
    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/shortcuts/sticky.min.js" integrity="sha512-O5YCLUxCY2OBc4rfpnKUIgE4LGuCiW8CrJ7ty4hvkBAAKUOnlbomEFWd3a6ruRnFvO3LG2wiaGiJ1heOvdppvA==" crossorigin="anonymous"></script>
    <script src="/script/script.js"></script>
+   <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  
+   </script>
 </body>
 </html>
