@@ -1,0 +1,471 @@
+/*
+COLORS
+green #065902
+green light #078C31
+yelow #F2B705
+red light #F03733
+red #D90404
+gray  #404040
+gray light #f7f7f7
+*/
+/*RESET*/
+/*#test{
+    background: #078C31;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 60px;
+    z-index: 10;
+    color: #000;
+}*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*box model seja igual para todos navegadores*/
+
+}
+header{
+    position: relative;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0)), url(../_imagens/secao08-background-capa.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+    border-top: 5px solid #078C31;
+    clip-path: polygon(0 0,100% 0,100% 97%,0 100%);
+    
+}
+nav{
+    width: 95%;
+    height: 200px;
+    margin: 10px auto;
+}
+div#logo{
+    background-image: url(../_imagens/secao08-logo-pizzaria-fontenelle.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+nav ul#left{
+    float: left;
+}
+nav ul#right{
+    float: right;
+}
+nav ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+    margin-top: 70px;
+    height: 40px;
+
+}
+nav ul li{
+    list-style: none;
+
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 100px;
+    font-size: 80%;
+
+}
+nav ul li a#create-account{
+    border: 1px solid #fff;
+    padding: 9px 29px;
+}
+nav ul li a:hover{
+    background-color:#F2B705;
+    transition-duration: 0.8s;
+}
+nav ion-icon#icon-user{
+    width: 45px;
+    height: 45px;
+    color: #fff;
+    margin-top: -13px;
+    margin-left: 20px;
+
+}
+nav ion-icon#icon-user:hover{
+    color:#F2B705;
+    transition-duration: 0.8s;
+    cursor: pointer;
+}
+header div#banner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 300px;
+    text-align: center;
+}
+/*SECTION ONE*/
+section#perfect-sunday{
+    width: 100%;
+    padding: 40px 0 80px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+div#perfect-left,
+div#perfect-right{
+    position: relative;
+    width: 15%;
+}
+div.sheet1{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 150px;
+    height: 150px;
+    background: url(../_imagens/secao09-folha1.png) no-repeat;
+    opacity: 0;
+}
+div.shrimp{
+    position: absolute;
+    top: 250px;
+    left: 0px;
+    width: 150px;
+    height: 150px;
+    background: url(../_imagens/secao09-camarao.jpg) no-repeat;
+    opacity: 0;
+}
+div.sheet2{
+    position: absolute;
+    top: 500px;
+    left: 50px;
+    width: 150px;
+    height: 150px;
+    background: url(../_imagens/secao09-folha2.png) no-repeat;
+    opacity: 0;
+}
+div.sheet3{
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    width: 160px;
+    height: 150px;
+    background: url(../_imagens/secao09-folha3.png) no-repeat;
+    opacity: 0;
+}
+div.tomato{
+    position: absolute;
+    top: 300px;
+    left: 100px;
+    width: 160px;
+    height: 150px;
+    background: url(../_imagens/secao09-tomate.png) no-repeat;
+    opacity: 0;
+}
+div.cheese{
+    position: absolute;
+    top: 600px;
+    left: 10px;
+    width: 160px;
+    height: 150px;
+    background: url(../_imagens/secao09-queijo.jpg) no-repeat;
+    opacity: 0;
+}
+
+ div#perfect-center{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+div#points{
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+div.key-points{
+    text-align: center;
+    width: 25%;
+}
+section#perfect-sunday div.key-points ion-icon{
+    width: 75px;
+    height: 75px;
+    color: #F03733;
+
+}
+
+/*----------------------*/
+/*---------PIZZA-------*/
+/*--------------------*/
+
+section#pizza{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.4)), url(../_imagens/secao10-background-secao-pizza.jpg);
+    padding: 40px 0 80px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    clip-path: polygon(0 3% ,100% 0,100% 97%,0 100%);
+}
+div#pizza-options-master{
+    width: 80%;
+    margin-top: 30px;
+    display: flex;
+    flex-flow: row wrap;
+}
+div.pizza-options{
+    width: 33.3%;
+    text-align: center;
+    margin: 5px 0 ;
+
+}
+/*----------------------*/
+/*-----TESTIMONIALS----*/
+/*--------------------*/
+
+section#testimonials{
+    width: 100%;
+    padding: 40px 0 80px;
+    background-image: linear-gradient(rgba(255,255,255,1),rgba(255,255,255,0.8),rgba(255,255,255,1)), url(../_imagens/secao11-background-secao-depoimento.png);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    
+
+}
+div#testimony-master{
+    width: 100%;
+    height: 300px;
+    
+    margin-top: 90px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+
+
+div#testimonials-right,div#testimonials-left{
+    width: 15%;
+    height: 300px;
+    cursor: pointer;
+}
+div#testimony-master ion-icon{
+    width: 90%;
+    height: 90%;
+    color: #F03733;
+}
+div#testimonials-left ion-icon{
+    opacity: 0.5;
+}
+
+div#testimonials-center{
+    width: 70%;
+    margin: 0 auto;
+    height: 300px;
+    position: relative;
+    max-width: 1010px;
+    overflow: hidden;
+
+}
+
+div#testimony-center{
+    position: absolute;
+    left: 0;
+    width: 2680px;
+}
+
+div#testimonials-center div#testimony-center ul{
+    display: inline-table;
+    width: 300px;
+    background: #fff;
+    padding: 30px;
+    margin: 50px 15px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+div#testimonials-center div#testimony-center ul li{
+    list-style: none;
+    display: inline-table;
+    width: 90%;
+    margin: 0;
+}
+div#testimonials-center div#testimony-center ul h5{
+    font-size: 140%;
+
+}
+div#testimonials-center div#testimony-center ul p{
+line-height: 1.5;
+color: #404040;
+font-size: 90%;
+}
+div#testimonials-center div#testimony-center ul img{
+    width: 40%;
+    border-radius: 100%;
+    margin-top: -80px;
+    margin-bottom: 20px;
+    border: 5px solid #F03733;
+} 
+/*----------------------*/
+/*TRANSITION DECORATION*/
+/*--------------------*/
+
+div#transition{
+    width: 100%;
+    height: 280px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+}
+
+div#decoration1{
+    width: 30%;
+    height: 100%;
+    background-image: url(../_imagens/secao13-tomate-manjericao-alho.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+
+}
+
+div#decoration2{
+  width: 30%;
+    height: 100%;
+    background-image: url(../_imagens/secao13-azeite.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+div#decoration3{
+    width: 30%;
+    height: 100%;
+    background-image: url(../_imagens/secao13-detalhe-tomate.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+/*----------------------*/
+/*-------PLANS---------*/
+/*--------------------*/
+
+section#plans{
+    width: 100%;
+    padding: 40px 0 80px;
+
+}
+div#plans-windows{
+    width: 80%;
+    margin: 30px auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+}
+
+div.plans{
+    width: 250px;
+    height: 450px;
+    margin: 80px 30px;
+
+}
+div.plans-top{
+    width: 250px;
+    height: 350px;
+    background: #f7f7f7;
+    border-top-left-radius:20px ;
+    border-top-right-radius:20px ;
+    text-align: center;
+    box-shadow: 2px 2px 3px #ccc;
+
+}
+div.plans-bottom{
+width: 250px;
+height: 100px;
+background-color: #078C31;
+border-bottom-left-radius: 20px;
+border-bottom-right-radius: 20px;
+box-shadow: 2px 2px 3px #ccc;
+cursor: pointer;
+}
+
+
+/*----------------------*/
+/*-------FOOTER--------*/
+/*--------------------*/
+div#transition-footer{
+    width: 100%;
+    height: 36px;
+    background-image:linear-gradient(rgba(255,255,255,1),rgba(255,255,255,0.5)), url(../_imagens/secao15-mesa-xadrez-clara.png);
+    background-repeat: repeat-x;
+    margin-top: 100px;
+}
+
+footer{
+    padding-top: 36px;
+    padding-left: 36px;
+    width: 100%;
+    height: 500px;
+    background-image: url(../_imagens/secao15-mesa-xadrez.png);
+    background-repeat: repeat;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    border-bottom: 10px solid #F03733;
+
+
+}
+footer div#maps{
+    width: 35%;
+    height: 390px;
+    background: #fff;
+    box-shadow: 0 3px 10px #404040;
+
+}
+
+footer div#infos{
+    width: 30%;
+    height: 390px;
+    background: #F03733;
+    box-shadow: 0 3px 10px #404040;
+}
+
+footer div#socials{
+    
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+
+}
+footer div#socials ion-icon{
+    color: #fff;
+    width: 20%;
+    height: 100%;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+footer div#socials ion-icon:hover{
+    color: #F2B705;
+}
+
+footer div#pizza-footer{
+    width: 300px;
+    height: 390px;
+    background-image: url(../_imagens/secao15-pizza-rodape.png);
+    background-repeat: no-repeat;
+    margin-top: -100px;
+
+}

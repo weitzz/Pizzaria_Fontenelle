@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Open+Sans:wght@300;400;600;700&family=Pacifico&display=swap');
+
+/*
+FONTS
+font-family: 'Fredericka the Great', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Pacifico', cursive;
+*/
+*{
+    font-size: 16px;
+}
+h1,h2,h3{
+    font-family: 'Fredericka the Great', cursive;
+    text-align: center;
+    text-transform: uppercase;
+    color: #D90404;
+}
+
+h4,h5,h6{
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    color: #F2B705;
+}
+
+h1{
+    font-size: 600%;
+    font-weight: 200;
+}
+h2{
+    font-size: 400%;
+    font-weight: 200;
+}
+h2::after{
+    display: block;
+    background-color:  #078C31;
+    height: 5px;
+    width: 100px;
+    margin: 40px auto 30px;
+    content: " ";
+}
+h4{
+    font-size: 150%;
+    font-weight: 150;
+    padding: 20px 0;
+}
+p,li,a{
+    font-family: 'Open Sans', sans-serif;
+    color: #404040;
+}
+p.contrast{
+    font-size: 130%;
+    line-height: 1.8;
+    font-weight: 300;
+    text-align: center;
+    width: 60%;
+
+}
+
+/*-------HEADER-------*/
+nav ul li a {
+    text-transform: uppercase;
+}
+
+header div#banner h1{
+    color: #fff;
+    text-shadow: 4px 6px 10px #000;
+
+    animation-name: headerH1-moveRight;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+
+}
+header div#banner h4{
+    font-size: 250%;
+    text-shadow: 4px 6px 10px #000;
+    margin-bottom: 55px;
+    animation-name: headerH4-moveleft;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+
+}
+header div#banner a{
+    text-transform: uppercase;
+    font-size: 110%;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    background: linear-gradient(rgba(7,140,49,55) 0%,rgba(6,89,2,35) 50%,rgba(6,89,2,35) 100%);
+    padding: 20px 80px;
+    border-radius: 50px;
+    display: inline-block;
+    animation-name: headerA-moveTop;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+}
+
+div.key-points h4{
+    color: #404040;
+}
+div.key-points h4::after{
+    display: block;
+    background: #078C31;
+    height: 5px;
+    width: 30%;
+    margin: 20px auto 10px;
+    content:" ";
+}
+
+/*PIZZA*/
+section#pizza p.contrast{
+    color: #fff;
+    width: 40%;
+}
+section#pizza ul li{
+    color: #fff;
+    list-style: none;
+    line-height: 1.9;
+    font-size: 90%;
+    text-transform: uppercase;
+}
+
+
+section#testimonials p.contrast{
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+/*----------------------*/
+/*-------PLANS---------*/
+/*--------------------*/
+
+section#plans h4{
+   color: #D90404;
+
+
+}
+section#plans ul{
+    margin-top: 25px;
+
+}
+section#plans ul li{
+    font-size: 85%;
+    text-align: left;
+    margin-left: 30px;
+    line-height: 2;
+    text-decoration: none;
+    list-style: none;
+}
+section#plans div.plans-bottom p{
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 35px;
+}
+
+/*----------------------*/
+/*-------FOOTER--------*/
+/*--------------------*/
+footer div#infos ul {
+    margin-left: 15px;
+    margin-bottom: 120px;
+}
+
+footer div#infos li{
+    list-style: none;
+    color: #fff;
+    margin-bottom: 5px;
+
+
+
+}
