@@ -25,6 +25,10 @@ gray light #f7f7f7
     box-sizing: border-box; /*box model seja igual para todos navegadores*/
 
 }
+/*
+body{
+    overflow-x: hidden;
+}*/
 header{
     position: relative;
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0)), url(../_imagens/secao08-background-capa.jpg);
@@ -38,29 +42,49 @@ header{
 }
 nav{
     width: 95%;
-    height: 200px;
-    margin: 10px auto;
+    height: 150px;
+   position: fixed;
+   z-index: 9999 !important;;
+   transition: 0.5s;
+   top: 0;
 }
-div#logo{
+
+nav.green{
+    width: 100%;
+    background: rgba(100, 100, 100, 0.80);
+    height: 55px;
+    left: 0;
+    
+}
+
+nav div#logo{
+    float: left;
     background-image: url(../_imagens/secao08-logo-pizzaria-fontenelle.png);
     background-size: contain;
     background-repeat: no-repeat;
-    width: 200px;
-    height: 200px;
-    float: left;
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+   
+}
+nav div.static{
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    background: #078C31;
 }
 nav ul#left{
     float: left;
 }
 nav ul#right{
     float: right;
+    
 }
 nav ul{
     display: flex;
     flex-flow: row wrap;
     justify-content: left;
     margin-top: 70px;
-    height: 40px;
 
 }
 nav ul li{
@@ -84,19 +108,21 @@ nav ul li a:hover{
     background-color:#F2B705;
     transition-duration: 0.8s;
 }
-nav ion-icon#icon-user{
+nav ion-icon{
     width: 45px;
     height: 45px;
     color: #fff;
-    margin-top: -13px;
+    margin-top: -10px;
     margin-left: 20px;
 
 }
-nav ion-icon#icon-user:hover{
+nav ion-icon:hover{
     color:#F2B705;
     transition-duration: 0.8s;
     cursor: pointer;
 }
+
+
 header div#banner{
     position: absolute;
     top: 50%;
@@ -106,10 +132,15 @@ header div#banner{
     height: 300px;
     text-align: center;
 }
-/*SECTION ONE*/
+
+section{
+    padding: 55px 0 80px;
+}
+/*----------------------*/
+/*---PERFECT-SUNDAY----*/
+/*--------------------*/
 section#perfect-sunday{
     width: 100%;
-    padding: 40px 0 80px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -207,7 +238,7 @@ section#perfect-sunday div.key-points ion-icon{
 
 section#pizza{
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.4)), url(../_imagens/secao10-background-secao-pizza.jpg);
-    padding: 40px 0 80px;
+    width: 100%;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -234,7 +265,6 @@ div.pizza-options{
 
 section#testimonials{
     width: 100%;
-    padding: 40px 0 80px;
     background-image: linear-gradient(rgba(255,255,255,1),rgba(255,255,255,0.8),rgba(255,255,255,1)), url(../_imagens/secao11-background-secao-depoimento.png);
     display: flex;
     flex-direction: column;
@@ -258,7 +288,7 @@ div#testimony-master{
 
 
 div#testimonials-right,div#testimonials-left{
-    width: 15%;
+    width: 10%;
     height: 300px;
     cursor: pointer;
 }
@@ -362,7 +392,7 @@ div#decoration3{
 
 section#plans{
     width: 100%;
-    padding: 40px 0 80px;
+    
 
 }
 div#plans-windows{
