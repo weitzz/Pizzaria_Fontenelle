@@ -25,10 +25,10 @@ gray light #f7f7f7
     box-sizing: border-box; /*box model seja igual para todos navegadores*/
 
 }
-/*
+
 body{
     overflow-x: hidden;
-}*/
+}
 header{
     position: relative;
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0)), url(../_imagens/secao08-background-capa.jpg);
@@ -38,26 +38,32 @@ header{
     height: 100vh;
     border-top: 5px solid #078C31;
     clip-path: polygon(0 0,100% 0,100% 97%,0 100%);
+   
     
 }
 nav{
-    width: 95%;
+    width:95%;
     height: 150px;
-   position: fixed;
-   z-index: 9999 !important;;
-   transition: 0.5s;
-   top: 0;
+    position: fixed;
+    top:0;
+    left:2.5%;
+    z-index:9999
+    
 }
 
 nav.green{
     width: 100%;
-    background: rgba(100, 100, 100, 0.80);
+    background: rgba(247, 247, 247, 0.98);
     height: 55px;
     left: 0;
+    z-index: 9999;
+    box-shadow: 0 1px 10px #333;
+    transition-duration:0.8s ;
     
 }
 
-nav div#logo{
+
+nav div{
     float: left;
     background-image: url(../_imagens/secao08-logo-pizzaria-fontenelle.png);
     background-size: contain;
@@ -67,12 +73,18 @@ nav div#logo{
     cursor: pointer;
    
 }
-nav div.static{
-    width: 55px;
+div.static{
+    width: 75px;
     height: 55px;
     cursor: pointer;
-    background: #078C31;
+    margin-left: 50px;
+    transition-duration:0.8s ;
 }
+
+div.static:hover{
+    background-color: #078C31;
+}
+
 nav ul#left{
     float: left;
 }
@@ -87,6 +99,11 @@ nav ul{
     margin-top: 70px;
 
 }
+
+.menuStatic{
+    margin-top: 15px;
+
+}
 nav ul li{
     list-style: none;
 
@@ -99,6 +116,11 @@ nav ul li a{
     border-radius: 100px;
     font-size: 80%;
 
+}
+.itenStatic{
+    color: #404040;
+    border-radius: 0;
+    padding: 19px 30px;
 }
 nav ul li a#create-account{
     border: 1px solid #fff;
@@ -115,6 +137,10 @@ nav ion-icon{
     margin-top: -10px;
     margin-left: 20px;
 
+}
+.iconStatic{
+    color: #404040;
+    margin-right: 50px;
 }
 nav ion-icon:hover{
     color:#F2B705;
@@ -144,6 +170,7 @@ section#perfect-sunday{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+   
 }
 div#perfect-left,
 div#perfect-right{

@@ -85,13 +85,48 @@ $('section#perfect-sunday').waypoint(function(direction){
    $(window).on('scroll',function(){
        if($(window).scrollTop()){
            $('nav').addClass('green');
-           $('nav div#logo').addClass('static');
+           $('nav div').addClass('static');
+           $('nav ul').addClass('menuStatic');
+           $('nav ul li a ').addClass('itenStatic');
+           $('nav ion-icon').addClass('iconStatic');
        }
        else{
         $('nav').removeClass('green');
-        $('nav div#logo').removeClass('static');
+        $('nav div').removeClass('static');
+        $('nav ul').removeClass('menuStatic');
+        $('nav ul li a ').removeClass('itenStatic');
+        $('nav ion-icon').removeClass('iconStatic');
        }
    })
+//animate links
+   $('nav ul li:eq(0)').click(function(){
+       $('html,body').animate({scrollTop:$('section#perfect-sunday').offset().top},2000)
+   });
+
+   $('nav ul li:eq(1)').click(function(){
+    $('html,body').animate({scrollTop:$('section#pizza').offset().top},2000)
+});
+
+$('nav ul li:eq(2)').click(function(){
+    $('html,body').animate({scrollTop:$('section#testimonials').offset().top},2000)
+});
+
+$('nav ul li:eq(3)').click(function(){
+    $('html,body').animate({scrollTop:$('section#plans').offset().top},2000)
+});
+
+$('nav ul li:eq(4)').click(function(){
+    $('html,body').animate({scrollTop:$('section#transition-footer').offset().top},2000)
+});
+
+$('nav div a:eq(0)').click(function(){
+    $('html,body').animate({scrollTop:$('header div#banner').offset().top},2000)
+});
+
+
+$('div#banner a:eq(0)').click(function(){
+    $('html,body').animate({scrollTop:$('section#plans').offset().top},2000)
+});
 
    //Login
 
