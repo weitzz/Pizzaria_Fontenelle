@@ -1,0 +1,85 @@
+
+
+body{
+    overflow-x: hidden;
+}
+/*----------------------*/
+/*-----TYPOGRAPHY------*/
+/*--------------------*/
+header div#banner h1{
+    font-size:330%;
+}
+header div#banner h4{
+    font-size:130%;
+    margin-bottom: 25px;
+}
+header div#banner a{
+    border-radius: 50px;
+    font-size: 100%;
+    padding: 20px 30px;
+}
+h2{
+    font-size:250%;
+}
+/*----------------------*/
+/*--------HEADER-------*/
+/*--------------------*/
+
+
+/*----------------------*/
+/*---PERFECT-SUNDAY----*/
+/*--------------------*/
+div#points{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+div.key-points{
+   margin-bottom: 40px;
+    width: 80%;
+}
+
+div.key-points p{
+    font-size:115%;
+    font-weight:300;
+    line-height:2em;
+}
+
+/*----------------------*/
+/*-----TESTIMONIALS----*/
+/*--------------------*/
+div#testimonials-center{
+    width: 340px;
+}
+section#testimonials div#testimonials-center div#testimony-center ul p{
+    font-size:115%;
+    font-weight:300;
+}
+
+/*----------------------*/
+/*-------PLANS---------*/
+/*--------------------*/
+section#plans{
+    height:inherit;
+
+}
+div.plans{
+    margin: 30px;
+}
+
+
+/*----------------------*/
+/*-------FOOTER--------*/
+/*--------------------*/
+
+footer div#maps{
+   display:none;
+
+}
+
+footer div#infos{
+    width: 95%;
+   
+}
