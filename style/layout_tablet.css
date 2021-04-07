@@ -1,0 +1,106 @@
+/*----------------------*/
+/*-----TYPOGRAPHY------*/
+/*--------------------*/
+p.contrast,section#pizza p.contrast,section#testimonials p.contrast{
+    width:80%;
+}
+/*----------------------*/
+/*--------HEADER-------*/
+/*--------------------*/
+
+
+nav{
+    width:100%;
+    left:0;
+
+}
+nav div{
+    width:150px;
+    height:130px;
+    background-position: center bottom;
+
+}
+  
+nav ul li a{
+    padding: 10px 12px;
+}
+
+.itenStatic{
+    padding: 19px 10px;
+}
+
+div.static{
+    margin-left: 10px;
+}
+/*----------------------*/
+/*---PERFECT-SUNDAY----*/
+/*--------------------*/
+div#perfect-left,
+div#perfect-right{
+    display:none;
+}
+
+
+div#perfect-center{
+    width: 95%;
+}
+
+/*----------------------*/
+/*----------PIZZA------*/
+/*--------------------*/
+
+div#pizza-options-master{
+    width:95%;
+}
+
+/*----------------------*/
+/*-----TESTIMONIALS----*/
+/*--------------------*/
+
+div#testimonials-left,div#testimonials-right{
+    display:none;
+}
+
+div#testimonials-center{
+    width: 670px;
+}
+
+/*----------------------*/
+/*-------PLANS---------*/
+/*--------------------*/
+
+div#plans-windows{
+    width: 100%;
+}
+
+div.plans{
+    margin: 80px 5px;
+
+}
+@media screen and (max-width:940px){
+    div.plans{
+        width:220px
+    }
+}
+
+
+/*----------------------*/
+/*-------FOOTER--------*/
+/*--------------------*/
+
+footer div#pizza-footer{
+    display:none;
+}
+
+footer div#maps,footer div#infos{
+    width: 45%;
+}
+
+footer div#infos{
+    margin-right: 35px;
+
+}
+
+footer div#socials ion-icon{
+    width: 10%;
+}

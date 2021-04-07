@@ -84,14 +84,14 @@ $('section#perfect-sunday').waypoint(function(direction){
 
    $(window).on('scroll',function(){
        if($(window).scrollTop()){
-           $('nav').addClass('green');
+           $('nav').addClass('navStatic');
            $('nav div').addClass('static');
            $('nav ul').addClass('menuStatic');
            $('nav ul li a ').addClass('itenStatic');
            $('nav ion-icon').addClass('iconStatic');
        }
        else{
-        $('nav').removeClass('green');
+        $('nav').removeClass('navStatic');
         $('nav div').removeClass('static');
         $('nav ul').removeClass('menuStatic');
         $('nav ul li a ').removeClass('itenStatic');

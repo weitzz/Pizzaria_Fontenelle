@@ -8,17 +8,7 @@ red #D90404
 gray  #404040
 gray light #f7f7f7
 */
-/*RESET*/
-/*#test{
-    background: #078C31;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 300px;
-    height: 60px;
-    z-index: 10;
-    color: #000;
-}*/
+
 *{
     margin: 0;
     padding: 0;
@@ -51,7 +41,7 @@ nav{
     
 }
 
-nav.green{
+nav.navStatic{
     width: 100%;
     background: rgba(247, 247, 247, 0.98);
     height: 55px;
@@ -140,7 +130,7 @@ nav ion-icon{
 }
 .iconStatic{
     color: #404040;
-    margin-right: 50px;
+    margin-right: 15px;
 }
 nav ion-icon:hover{
     color:#F2B705;
@@ -438,7 +428,7 @@ div.plans{
 
 }
 div.plans-top{
-    width: 250px;
+    width: 100%;
     height: 350px;
     background: #f7f7f7;
     border-top-left-radius:20px ;
@@ -447,14 +437,20 @@ div.plans-top{
     box-shadow: 2px 2px 3px #ccc;
 
 }
+
 div.plans-bottom{
-width: 250px;
+width: 100%;
 height: 100px;
 background-color: #078C31;
 border-bottom-left-radius: 20px;
 border-bottom-right-radius: 20px;
 box-shadow: 2px 2px 3px #ccc;
 cursor: pointer;
+transition-duration: 0.8s;
+}
+
+div.plans-bottom:hover{
+    background-color: #065902;
 }
 
 
