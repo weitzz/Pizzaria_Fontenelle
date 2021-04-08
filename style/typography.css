@@ -6,6 +6,16 @@ font-family: 'Fredericka the Great', cursive;
 font-family: 'Open Sans', sans-serif;
 font-family: 'Pacifico', cursive;
 */
+:root{
+    --green: #065902;
+    --green-light :#078C31;
+    --yelow: #F2B705;
+    --red-light: #F03733;
+    --red: #D90404;
+    --gray:  #404040;
+    --gray-medium: #ccc;
+    --gray-light: #f7f7f7;
+}
 *{
     font-size: 16px;
 }
@@ -13,13 +23,13 @@ h1,h2,h3{
     font-family: 'Fredericka the Great', cursive;
     text-align: center;
     text-transform: uppercase;
-    color: #D90404;
+    color: var(--red);
 }
 
 h4,h5,h6{
     font-family: 'Pacifico', cursive;
     text-align: center;
-    color: #F2B705;
+    color: var(--yelow);
 }
 
 h1{
@@ -32,7 +42,7 @@ h2{
 }
 h2::after{
     display: block;
-    background-color:  #078C31;
+    background-color:  var(--green-light);
     height: 5px;
     width: 100px;
     margin: 40px auto 30px;
@@ -45,7 +55,7 @@ h4{
 }
 p,li,a{
     font-family: 'Open Sans', sans-serif;
-    color: #404040;
+    color:var(--gray);
 }
 p.contrast{
     font-size: 130%;
@@ -99,11 +109,11 @@ header div#banner a{
 }
 
 div.key-points h4{
-    color: #404040;
+    color: var(--gray);
 }
 div.key-points h4::after{
     display: block;
-    background: #078C31;
+    background: var(--green-light);
     height: 5px;
     width: 30%;
     margin: 20px auto 10px;
@@ -134,7 +144,7 @@ section#testimonials p.contrast{
 /*--------------------*/
 
 section#plans h4{
-   color: #D90404;
+   color:var(--red);
 
 
 }

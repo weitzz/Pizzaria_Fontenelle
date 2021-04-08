@@ -1,13 +1,13 @@
 
 
-body{
+html,body{
     overflow-x: hidden;
 }
 /*----------------------*/
 /*-----TYPOGRAPHY------*/
 /*--------------------*/
 header div#banner h1{
-    font-size:330%;
+    font-size:310%;
 }
 header div#banner h4{
     font-size:130%;
@@ -21,10 +21,49 @@ header div#banner a{
 h2{
     font-size:250%;
 }
+
+
 /*----------------------*/
-/*--------HEADER-------*/
+/*---------NAV---------*/
 /*--------------------*/
 
+nav ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: left;
+    
+}  
+nav ul#right,nav ul#left{
+    display: none;
+   position: absolute;
+   top: 40px;
+   right:30px;
+   background: rgba(247, 247, 247, 0.98);
+   width: 50%;
+
+}
+
+nav ul#right{
+    top: 230px;
+}
+nav ul#icon-menu-mobile{
+    display:inline;
+    margin-right: 20px;
+   }
+
+
+nav ul li a,nav ul li a#create-account,
+.itenStatic,.iconStatic{
+    display: block;
+    color: var(--gray);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 0;
+    border: none;
+    font-size: 80%;
+
+}
 
 /*----------------------*/
 /*---PERFECT-SUNDAY----*/
