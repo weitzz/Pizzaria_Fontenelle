@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Pizzaria Fontenelle</title>
-	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" >
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="./style/animations.css">
 	<link rel="stylesheet" href="./style/layout.css">
 	<link rel="stylesheet" href="./style/typography.css">
@@ -71,17 +71,17 @@
 				<ion-icon name="close-outline"></ion-icon>
 			</a>
 			<strong>Cadastrar</strong>
-			<form action="">
-				<input type="text" placeholder="Nome completo"  name="fullName" required>
-				<input type="email" placeholder="email@email.com"  name="email"required>
-				<input type="password" placeholder="senha"  name="password" required>
-				<input type="submit" value="Criar conta">
+			<form action="" method="POST" id="form">
+				<input type="text" placeholder="Nome completo"  name="fullName" id="name" >
+				<input type="email" placeholder="email@email.com"  name="email" id="email" >
+				<input type="password" placeholder="senha"  name="password" id="password" >
+				<input type="submit" value="Criar conta" id="submit">
 			</form>
 			<!--LOGIN SIGNUP BTN-->
 			<div class="form-btns">
 				<a href="#" class="already-account">Já tem conta ?</a>
-				
 			</div>
+			<p class="warning" id="warning"></p>
 		</div>
 	</div>
 
@@ -421,7 +421,7 @@
 
 	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 	<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script src="/script/script.js"></script>
 </body>
 

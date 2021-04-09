@@ -40,8 +40,10 @@ $('div#testimonials-left').click(function(){
 //CLICK assinatura
 
 $('div.plans-bottom').click(function(){
-    alert('clicou')
+    $('.form').addClass('login-active').removeClass('signup-active')
 })
+
+
 //links rede sociais
 
 $('ion-icon#instagram').click(function(){
@@ -196,3 +198,38 @@ $(document).on('click','.signup-btn',function(){
 $(document).on('click','.form-cancel',function(){
     $('.form').removeClass('login-active').removeClass('signup-active')
 })
+
+//VALIDATION
+
+const name = document.getElementById('name');
+const email = document.getElementById('email');
+const password = document.getElementById('password');
+const form = document.getElementById('form');
+const messageErro = document.getElementById('warning');
+
+form.addEventListener('submit', (e) =>{
+    e.preventDefault()
+    let warnings = ''
+    let logIn = false
+    let regexEmail = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+      messageErro.innerHTML = ''
+    if(name.value.length < 6){
+        warnings += `Nome inválido! <br>`
+        logIn = true
+    }
+    if(!regexEmail.test(email.value)){
+        warnings += `Email inválido! <br>`
+        logIn = true
+    }
+    if(password.value.length < 8){
+        warnings += `Senha inválida!(Mínimo de 8 caracteres) <br>`
+        logIn = true
+    }
+    if(logIn){
+        messageErro.innerHTML = warnings
+    }else{
+        messageErro.innerHTML = `Enviado!`
+    }
+})
+
+
