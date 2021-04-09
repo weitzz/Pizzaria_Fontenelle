@@ -30,7 +30,7 @@
 		<li><ion-icon name="menu-outline"></ion-icon></li>
 		</ul>
 		<ul id="right">
-			<li><a id="create-account" href="login.html">Criar Conta</a></li>
+			<li><a class="create-account" href="#">Criar Conta</a></li>
 			 <li><ion-icon name="person-circle-outline"></ion-icon></li> 
 		</ul>
 	</nav>
@@ -43,6 +43,47 @@
 			<a href="#plans">Escolha agora mesmo seu plano</a>
 		</div>
 	</header>
+	<!--LOGIN SIGNIN FORM-->
+	<div class="form">
+		<!--LOGIN-->
+		<div class="login-form">
+			<!--CANCEL-BTN-->
+			<a href="#" class="form-cancel">
+				<ion-icon name="close-outline"></ion-icon>
+			</a>
+			<strong>Login</strong>
+			<form action="">
+				<input type="email" placeholder="email@email.com"  name="email" required>
+				<input type="password" placeholder="senha"  name="password" required>
+				<input type="submit" value="login">
+			</form>
+			<!--LOGIN SIGNUP BTN-->
+			<div class="form-btns">
+				<a href="#" class="forget">Esqueceu sua senha ?</a>
+				<a href="#" class="signup-btn">Criar conta</a>
+			</div>
+		</div>
+
+		<!--SIGNUP-->
+		<div class="signup-form">
+			<!--CANCEL-BTN-->
+			<a href="#" class="form-cancel">
+				<ion-icon name="close-outline"></ion-icon>
+			</a>
+			<strong>Cadastrar</strong>
+			<form action="">
+				<input type="text" placeholder="Nome completo"  name="fullName" required>
+				<input type="email" placeholder="email@email.com"  name="email"required>
+				<input type="password" placeholder="senha"  name="password" required>
+				<input type="submit" value="Criar conta">
+			</form>
+			<!--LOGIN SIGNUP BTN-->
+			<div class="form-btns">
+				<a href="#" class="already-account">Já tem conta ?</a>
+				
+			</div>
+		</div>
+	</div>
 
 	<!--PERFECT SUNDAY-->
 	<section id="perfect-sunday">

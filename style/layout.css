@@ -117,7 +117,7 @@ nav ul li a{
     border-radius: 0;
     padding: 19px 30px;
 }
-nav ul li a#create-account{
+nav ul li a.create-account{
     border: 1px solid #fff;
     padding: 9px 29px;
 }
@@ -157,6 +157,141 @@ header div#banner{
 section{
     padding: 55px 0 80px;
 }
+/*----------------------*/
+/*---MODAL LOGIN----*/
+/*--------------------*/
+
+
+.form{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    z-index: 1000;
+}
+.login-form,.signup-form{
+    position: relative;
+    width:420px;
+    padding:30px;
+    background-color: var(--gray-light);
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+}
+.signup-form form,
+.login-form form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.signup-form input,
+.login-form input{
+    width: 90%;
+    height: 45px;
+    margin: 6px 0;
+    padding: 0 10px;
+    border: 1px solid rgba(0,0,0,0.1);
+    outline: none;
+    border-radius: 7px;
+}
+.signup-form input::placeholder,
+.login-form input::placeholder{
+    color: var(--gray);
+
+}
+.signup-form input[type='submit'],
+.login-form input[type='submit']{
+    background-color: var(--green);
+    color: #fff;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    margin-top: 10px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+    transition-duration: 0.8s;
+}
+.signup-form input[type='submit']:hover
+.login-form input[type='submit']:hover{
+    background-color: var(--green-light);
+}
+.form-btns{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.form-btns a{
+ text-decoration: none;
+ font-size: 95%;
+ transition-duration: 0.5s;
+}
+.form-btns a:hover{
+    color: var(--green);
+}
+.form-btns .signup-btn{
+    border-bottom: 1px solid var(--gray);
+    line-height: 20px;
+}
+.form-cancel{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    color: var(--gray);
+    transition-duration: 0.5s;
+}
+
+.form-cancel ion-icon{
+    width: 25px;
+    height: 25px;
+}
+.form-cancel:hover{
+    color: var(--red);
+}
+
+.form,
+.login-form,
+.signup-form{
+    display: none;
+}
+
+.login-active,
+.login-active
+.login-form{
+    display: flex;
+    animation: fade 0.3s;
+   
+
+}
+.signup-active,
+.signup-active
+.signup-form{
+    display: flex;
+    animation: fade 0.3s;
+   
+
+}
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
 /*----------------------*/
 /*---PERFECT-SUNDAY----*/
 /*--------------------*/

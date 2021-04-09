@@ -1,4 +1,4 @@
-var quant = $("div#testimony-center ul").length;
+var quant = ("div#testimony-center ul").length;
 var limit = (quant * 336)* -1;
 var widthPage = limit + 336;
 var viewWidht = $("div#testimonials-center").width();
@@ -180,52 +180,19 @@ $(window).resize(function(){
     }
 })
 
-   //Login
 
 
-   const form = document.getElementById('form')
-   const userName = document.getElementById('username')
-   const email = document.getElementById('email')
-   const password = document.getElementById('password')
-   const passwordCheck = document.getElementById('password_check')
+   //MODAL LOGIN & SIGNUP
+$(document).on('click','.create-account,.already-account',function(){
+    $('.form').addClass('login-active').removeClass('signup-active')
+});
 
+$(document).on('click','.signup-btn',function(){
+    $('.form').addClass('signup-active').removeClass('login-active')
+})
 
-   form.addEventListener('submit',e =>{
-       e.preventDefault();
+//signup-btn
 
-
-       checkInputs();
-   });
-
-   function checkInputs(){
-       //pegar valores dos inputs
-   const userNameValue = userName.value.trim();
-   const emailValue = email.value.trim();
-   const passwordValue = password.value.trim();
-   const passwordCheckValue = passwordCheck.value.trim();
-
-   if(userNameValue === " "){
-       //mostrar erro
-       //add error class
-        setErrorFor(userName,"Preencher campo!")
-   }else{
-       //add success class
-       setSuccessFor(userName)
-    }
-}
-
-function setErrorFor(input,message){
-    const formControl = input.parentElement;
-    const small = formControl.querySelector('small');
-    // add class
-    formControl.className = "form-control error"
-    // add menssagem de erro
-    small.innerText = message;
-
-
-
-}
-
-function setSuccessFor(){
-
-}
+$(document).on('click','.form-cancel',function(){
+    $('.form').removeClass('login-active').removeClass('signup-active')
+})
